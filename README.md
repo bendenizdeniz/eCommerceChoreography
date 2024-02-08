@@ -19,4 +19,4 @@ Order Service: Manages the creation, modification, and fulfillment of customer o
 
 Payment Service: Handles payment processing for completed orders.
 
-Shipping Service: Takes care of the shipping process, updating order status and providing tracking information.
+Stock Service: Takes care of the shipping process, updating order status and providing tracking information.
