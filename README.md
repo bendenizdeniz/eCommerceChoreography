@@ -14,6 +14,7 @@ Event Bus: The system relies on an event bus to facilitate seamless communicatio
 Events are published and subscribed to asynchronously, enabling efficient handling of business processes.
 
 Components
+
 Order Service: Manages the creation, modification, and fulfillment of customer orders.
 
 Payment Service: Handles payment processing for completed orders.
