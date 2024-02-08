@@ -1,7 +1,7 @@
 Project Name: E-Commerce Choreography
 
 Overview:
-This project lays the groundwork for a robust e-commerce application, employing the **Saga Design Pattern** with eventual consistency via the **Choreography** architecture.
+This project lays the groundwork for a robust e-commerce application, employing the **Saga Design Pattern** with **eventual consistency** via the **Choreography** architecture.
 Microservices within this ecosystem communicate seamlessly through an **event bus**, offering a scalable and resilient solution for managing intricate business processes in a distributed environment.
 
 Features:
