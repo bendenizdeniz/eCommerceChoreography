@@ -4,6 +4,7 @@
     <option name="keyValueStorage">
       <map>
         <entry key="Common:5a25b1bc-026b-428f-90b5-53fb9364b1a3:dbContext" value="eCommerceChoreography.DataStructures.OrderAPIDbContext" />
+        <entry key="Common:5e16a5fa-3e56-44a9-ab3e-98101229a6fd:dbContext" value="StockAPI.DataStructures.StockAPIDbContext" />
         <entry key="Common:buildConfiguration" value="Debug" />
         <entry key="Common:noBuild" value="false" />
         <entry key="Common:outputFolder" value="Migrations" />

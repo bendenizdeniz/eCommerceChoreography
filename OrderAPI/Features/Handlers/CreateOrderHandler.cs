@@ -38,7 +38,7 @@ public class CreateOrderHandler : IRequestHandler<CreateOrderCommand, CreateOrde
         {
             BuyerId = buyerId,
             OrderList = orderItems,
-            OrderStatus = OrderStatus.Suspend,
+            OrderStatus = OrderStatus.Suspended,
             CreatedDate = DateTime.Now,
             TotalPrice = cmd.OrderItems.Sum(x => x.Price * x.Count)
         };

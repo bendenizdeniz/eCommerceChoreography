@@ -1,11 +1,16 @@
 ﻿version: '3.8'
 
+volumes:
+  mssql_volume: { }
+  postgre_volume: { }
+
 services:
-  c_orderDB:
+  s_orderDB:
     image: mcr.microsoft.com/mssql/server:2022-latest
     environment:
       - ACCEPT_EULA=Y
       - MSSQL_SA_PASSWORD=Password1
+      - ORDER_DB_CONN=Server=localhost,1433;Database=ChoreographyDB;User Id=sa;Password=Password1;Encrypt=False;
     ports:
       - "1433:1433"
     container_name: c_orderDB
@@ -14,7 +19,16 @@ services:
     restart: always
     volumes:
       - mssql_volume:/var/opt/mssql
-        
-
-volumes: 
-  mssql_volume: {}
+  
+  s_stockDB:
+    image: postgres
+    environment:
+      - POSTGRES_PASSWORD=Password2
+      - POSTGRES_SSL_MODE=disable
+      - STOCK_DB_CONN=Host=localhost;Port=5432;Database=StockDB;Username=postgres;Password=Password2;
+    ports:
+      - "5432:5432"
+    container_name: c_stockDB
+    restart: always
+    volumes:
+      - postgre_volume:/var/opt/postgre  
